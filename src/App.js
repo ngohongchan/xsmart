@@ -11,36 +11,24 @@ import CategoryProductPage from './components/CategoryProducts/categoryProducts.
 import Modal from './components/Modal/modal.component';
 import CartPage from './components/Cart/cart.component';
 import ModalCart from './components/ModalCart/modal-cart.cmponent';
-import { useProductsContext } from './context/products.context';
-import LoadingHomePage from './components/Loading/loading-home-page.component';
 import Register from './components/register/register.component';
 import LoginPage from './components/Login/login.component';
 
 function App() {
-
-  const { products_Topsale, productHot,  product_listsale } = useProductsContext();
-
-  // if(!products_Topsale.length && !productHot.length && !product_listsale.length) {
-  //   return <LoadingHomePage/>
-  // }
 
   return (
     <>
     <Modal/>
     <ModalCart/>
         <Switch>  
-          {
-            (!products_Topsale.length && !productHot.length && !product_listsale.length) ? (
-              <LoadingHomePage/>
-            ) : (
+   
               <Route exact path='/'> 
                 <HeaderHomePage filter='none' color='white' logo='logo.png' colorItem='white' colorText='#ef562c'/>
                 <BackgroundHome/>
                 <Home/>
                 <Footer/>
             </Route>
-            )
-          }
+
             <Route exact path='/product/:id' children={ProductSingleComponent}/>
             <Route exact path='/category-products/:id' children={CategoryProductPage}/>
             <Route exact path='/products'>

@@ -44,7 +44,7 @@ const HeaderHomePage = ({ filter, color, logo, colorItem, colorText, itemCount }
                   </span>
                   <span className='header_main__cartgroup'>
                     <span className='header_main__cartgroup--account' onClick={() => setIsToggleAccount(!isToggleAccount)}>
-                        <img className='img_log' src={userLog} alt='user image'/>
+                        <img className='image_log' src={userLog} alt='logo'/>
                         <span  style={{ color: color  }} className='title_log'>Tài khoản <i className="fa fa-chevron-down" aria-hidden="true"></i> </span>
                         <span className={`${isToggleAccount ? 'account_log' : 'account_log hide-account'}`}>
                             {

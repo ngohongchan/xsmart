@@ -58,7 +58,7 @@ const ProductSinglePage = ({ addItem }) => {
                             </div>
                             <div className='group-button'>
                                 <button className='btn btn-danger'  onClick={() => { addItem(productsDetail); showCartModal(); handleShowCartModal(productsDetail.id); }}>
-                                    <img src={bag}/>
+                                    <img src={bag} alt='img'/>
                                     Thêm vào giỏ hàng
                                 </button>
                             </div>

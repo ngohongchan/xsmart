@@ -48,23 +48,19 @@ const filter_reducer = (state, action) => {
         const { all_products } = state;
         const { searchText, brandFilter, price, categoryFilter } = state.filters;
     
-        let tempProducts = [...all_products];     
+        let tempProducts = all_products;     
     
         //Filter Brand
         if(brandFilter !== 'all') {
             tempProducts = tempProducts.filter((item) => {
-               if(parseInt(brandFilter) === parseInt(item.brand_id)){
                 return parseInt(item.brand_id) === parseInt(brandFilter);
-               }
             })
         }
        
         //Filter Category
         if(categoryFilter !== 'all') {
             tempProducts = tempProducts.filter((item) => {
-                if(parseInt(categoryFilter) === parseInt(item.category_id)){
                     return parseInt(item.category_id) === parseInt(categoryFilter); 
-                }
             })
         }
 
@@ -95,8 +91,6 @@ const filter_reducer = (state, action) => {
     }
 
     return state;
-    
-    throw new Error(`No Matching "${action.type}" - action type`);
 }
 
 

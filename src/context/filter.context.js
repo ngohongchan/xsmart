@@ -43,7 +43,7 @@ export const FilterProvider = ({ children }) => {
 
     useEffect(() => {
         dispatch({ type: LOAD_PRODUCTS, payload: { products, brand } });
-    }, [products]);
+    }, [products, brand, dispatch]);
 
     useEffect(() => {
         const searchParams = new URLSearchParams(location.search);
@@ -53,7 +53,7 @@ export const FilterProvider = ({ children }) => {
             payload: { name: 'searchText', value: searchParams.get('s') }
         });
 
-    }, [])
+    }, [location.search, dispatch])
 
 
     const updateFilter = (e) => {
