@@ -1,0 +1,65 @@
+.group_topsale {
+  width: 100%;
+  padding-bottom: 50px;
+
+  .row {
+    display: flex;
+    justify-content: center;
+    .col-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &__img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      &__title {
+        font-family: "Roboto", sans-serif;
+        font-size: 40px;
+        font-weight: 900;
+        margin: 0;
+        padding-bottom: 30px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+      }
+
+      &__name {
+        font-weight: 400;
+        &--link {
+          text-decoration: none;
+          color: black;
+
+          &:hover {
+            color: #ef562c;
+          }
+        }
+      }
+
+      &__brand {
+        &--text {
+          margin-right: 10px;
+        }
+
+        .brand_dark {
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+
+      &__price {
+        font-weight: 400;
+        color: #ef562c;
+      }
+
+      .des_single_item {
+        p {
+          span {
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}

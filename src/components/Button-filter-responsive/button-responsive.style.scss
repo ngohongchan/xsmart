@@ -1,0 +1,56 @@
+// Mobile & tablet
+@media (max-width: 1024px) {
+    .container {
+      width: initial;
+      max-width: 1024px;
+    }
+
+    .open-filter{
+        display: block;
+    }
+    
+  
+  }
+
+    // Tablet
+@media (min-width: 739px) and (max-width: 1024px) {
+    .container {
+        width: initial;
+        min-width: 740px;
+        max-width: 1024px;
+    }
+
+    .open-filter{
+        display: block;
+    }
+
+   
+}
+    
+    //Mobile
+@media (max-width: 740px) {
+    .container {
+        width: initial;
+        min-width: 740px;
+    }
+    
+      .open-filter{
+        display: block;
+    }
+     
+}
+    
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .container {
+      width: initial;
+      min-width: 320px;
+      max-width: 479px;
+    }
+
+    .open-filter{
+        display: block;
+    }
+      
+
+}

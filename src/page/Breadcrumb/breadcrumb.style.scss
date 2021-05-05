@@ -1,0 +1,24 @@
+.breadcrumbs {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+.breadcrumb {
+  display: flex;
+  li {
+    list-style-type: none;
+    margin-right: 15px;
+    a {
+      text-decoration: none;
+    }
+  }
+  .active {
+    color: #ef562c;
+  }
+  span {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,15 @@
+.open-filter{
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    color: #fff;
+    background: #ef562c;
+    padding: 4px 10px;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 20px;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}

@@ -1,0 +1,20 @@
+.services {
+  padding: 30px 0;
+  background: #fbfbfb;
+  width: 100%;
+  .row {
+    display: flex;
+    justify-content: space-between;
+
+    .col-3 {
+      width: calc(100% / 4 - 20px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        margin-right: 40px;
+      }
+    }
+  }
+}
