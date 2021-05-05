@@ -51,7 +51,7 @@ const Modal = ({ addItem }) => {
                                             handleShowCartModal(showModalData.id);
                                             closeModal()
                                             }}>
-                                            <img src={bag}/>
+                                            <img src={bag} alt='img'/>
                                             Thêm vào giỏ hàng
                                         </button>
                                     </div>

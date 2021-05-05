@@ -72,7 +72,7 @@ const HeaderHomePage = ({ filter, color, logo, colorItem, colorText, itemCount }
                         <img  style={{ filter: filter  }} src={search} alt='search'onClick={() => setIsToggleSearch(!isToggleSearch)}/>
                         <span className={`${isToggleSearch ? 'search_group' : 'search_group hide-search'}`}>
                             <form className='search_group__form' onSubmit={handleSubmit}>
-                                <input onChange={updateFilter} value={searchText} className='search_group__form--searchInput' type="text" name='searchText' placeholder='Tìm kiếm'/>
+                                <input onChange={updateFilter} value={searchText || ''} className='search_group__form--searchInput' type="text" name='searchText' placeholder='Tìm kiếm'/>
                                 <button className='search_group__form--searchBtn' type='submit'><i className="fa fa-search" aria-hidden="true"></i></button>
                             </form>
                         </span>

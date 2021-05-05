@@ -22,7 +22,7 @@ const Jumbotron = ({ direction, img, productFirst, productSecond }) => {
                         <div className='row'>
                             <div className={`${direction === 'row' ? 'column left' : 'column right'}`}>
                                 <div className='column__img' >
-                                    <img src={productFirst.image[0].url}/>
+                                    <img src={productFirst.image[0].url} alt='img'/>
                                 </div>
 
                                 <div className='column__info'>
@@ -37,7 +37,7 @@ const Jumbotron = ({ direction, img, productFirst, productSecond }) => {
 
                             <div className={`${direction === 'row' ? 'column left' : 'column right'}`}>
                                 <div className='column__img'>
-                                    <img src={productSecond.image[0].url}/>
+                                    <img src={productSecond.image[0].url} alt='img'/>
                                 </div>
                                 <div className='column__info'>
                                     <p className='column__info--name'>{productSecond.name}</p>
