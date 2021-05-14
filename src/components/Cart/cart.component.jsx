@@ -53,7 +53,7 @@ const Cart = ({ cartItems, total }) => {
                             </div>
                         </div>
                         <div className='group-checkout'>
-                            <Link t='/products' className='back-home'>Tiếp tục mua hàng</Link>
+                            <Link to='/products' className='back-home'>Tiếp tục mua hàng</Link>
                             <div className='group-checkout__total'>
                                 <div className='group-checkout__total--alert'>
                                     <div className='left'>Tổng giá:</div>
